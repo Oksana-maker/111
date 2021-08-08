@@ -1,0 +1,12 @@
+<ul>
+  <mat-selection-list>
+    <mat-list-option
+      (click)="onSelectClick(idx)"
+      *ngFor="let user of users let idx = index">
+      {{user}}
+    </mat-list-option>
+  </mat-selection-list>
+</ul>
+
+<button mat-raised-button color="primary"
+        (click)="onRemoveClick()">Remove</button>
